@@ -28,6 +28,10 @@ controlled Scrapling upgrade, change `SCRAPLING_IMAGE` to a tested upstream
 tag, deploy, then rerun the unauthenticated, MCP initialize/tool-listing,
 lightweight fetch, and browser-fetch smoke tests before promoting it.
 
+Pushes to `main` publish a Linux/amd64 wrapper image to GitHub Container
+Registry. Railway can use that image directly when rebuilding the upstream
+image on its Metal Builder is unavailable or unreliable.
+
 ## Local check
 
 ```bash
